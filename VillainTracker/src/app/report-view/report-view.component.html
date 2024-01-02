@@ -1,0 +1,16 @@
+<div *ngIf="report">
+    <img *ngIf="report.data.image" [src]="report.data.image" alt="Uploaded Image" />
+    
+    <p><strong>Villain Name: </strong>{{ report.data.villain }}</p>
+    <p><strong>Location: </strong>{{ report.data.location }}</p>
+
+    <!-- <p><strong>Longitude: </strong>{{ report.data.longitude }}</p>
+    <p><strong>Latitude: </strong>{{ report.data.latitude }}</p> -->
+
+    <p><strong>Reported by: </strong>{{ report.data.witness }}</p>
+    <p><strong>Time: </strong>{{ report.data.time |  date: "yyyy-MM-dd (hh:mm a)"}}</p>
+    <p><strong>Status: </strong>{{ report.data.status }} <button (click)="onChangeStatus()" class="change">CHANGE</button></p>
+    <p><strong>Extra Info: </strong>{{ report.data.extra }}</p>
+    <button (click)="goBack()">BACK</button>
+ </div>
+  

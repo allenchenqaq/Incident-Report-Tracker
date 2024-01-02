@@ -1,0 +1,30 @@
+<form
+    [formGroup]="form"
+    (ngSubmit)="onSubmit(form.value)"
+>
+    <fieldset>
+        <legend>ADD VILLIAN</legend>
+        <label>Image:</label>
+        <input id="imageInput" class="space" type="file" accept=".jpg,.png" formControlName="image"><br>   
+        Villain Name:<input type="text" name="villain" placeholder="villain name" formControlName="villain" class="space"><br>
+        
+        <!-- Location:<input type="text" name="location" placeholder="location" formControlName="location" class="space"><br> -->
+        
+        <label for="locationInput">Location:</label>
+        <input type="text" id="locationInput" name="location" placeholder="add or select location" formControlName="location" class="space" list="locations" (mouseover)="onLocationInput($event)">
+        <datalist id="locations">
+            <option *ngFor="let location of filteredLocations" [value]="location">{{ location }}</option>
+        </datalist><br>
+        <!-- added -->
+        <!-- <p>Add latitude and longitude if the map may not identify the location you entered</p> -->
+        <label>Optional: add if map may not identify the latitude and longitude of the location</label><br>
+        Latitude: <input type="number" name="latitude" placeholder="click map to see latitude in console" formControlName="latitude" class="space"><br>
+        Longitude: <input type="number" name="longitude" placeholder="click map to see longitude in console" formControlName="longitude" class="space"><br>
+
+        Reported by:<input type="text" name="witness" placeholder="witness" formControlName="witness" class="space"><br>
+        Extra notes:<input type="string" name="extra" placeholder="description" formControlName="extra" class="space"><br>     
+        <button [disabled]="!form.valid" class="save">SAVE</button>
+        <button (click)="goBack()">BACK</button>
+    </fieldset>
+</form>
+

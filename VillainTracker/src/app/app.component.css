@@ -1,0 +1,50 @@
+/* Add styles for table headers and rows as needed */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer; /* Add cursor pointer for clickable columns */
+  }
+  
+  th:hover {
+    background-color: #f2f2f2;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+  .leaflet-container {
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .create{
+    width:100%;
+    color:white;
+    background-color: #007bff;
+    font-size: large;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius:4px;
+    border: none;
+  }
+
+  .info{
+    text-decoration: underline;
+    color: grey;
+  }
+
+  .delete{
+    color: red;
+  }
