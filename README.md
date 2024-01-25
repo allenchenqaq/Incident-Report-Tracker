@@ -5,10 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Screenshots of the APP
 
 ### Main Page:
-![image](https://github.com/allenchenqaq/Villain-Tracker/assets/92569740/bf3dfe4f-4b1d-4d4d-81f9-bbf5e995a6ac)
+![image](https://github.com/allenchenqaq/Villain-Tracker/assets/92569740/18bb44df-5ac8-4a37-a984-a61c1ad458de)
 
 ### More Info:
-![image](https://github.com/allenchenqaq/Villain-Tracker/assets/92569740/cb788332-8b3c-4301-8f83-7b494948ee4e)
+![image](https://github.com/allenchenqaq/Villain-Tracker/assets/92569740/50199ba3-48df-4460-85bb-4929acc740b2)
 
 ### Create Report:
 ![image](https://github.com/allenchenqaq/Villain-Tracker/assets/92569740/22c9227e-5fc4-4ec0-ad70-770b3fc13b20)
